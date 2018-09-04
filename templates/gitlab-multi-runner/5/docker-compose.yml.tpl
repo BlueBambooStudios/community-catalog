@@ -3,7 +3,7 @@ version: '2'
 services:
 
   gitlab-runner-config:
-    image: gitlab/gitlab-runner:alpine-v11.1.0
+    image: gitlab/gitlab-runner:alpine-v11.2.0
     stdin_open: true
     volumes:
     - /etc/gitlab-runner/
@@ -40,7 +40,7 @@ services:
       io.rancher.container.start_once: 'true'
 
   gitlab-runner:
-    image: gitlab/gitlab-runner:alpine-v11.1.0
+    image: gitlab/gitlab-runner:alpine-v11.2.0
     stdin_open: true
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
